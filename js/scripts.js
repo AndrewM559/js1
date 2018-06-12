@@ -57,13 +57,13 @@ for(let i =0; i<todos.length; i++) {
 // console.log(todos)
 
 
-todos.sort()
+todos.sort();
 
 let longest = todos[0];
 
 let j = 0;
 while(j < todos.length) {
-  if(todos[j][0] > longest[0]) longest =todos[j];
+  if(todos[j][0] > longest[0]) longest = todos[j];
 
 //   longest = todos[j][0] > longest[0] ? longest = todos[j] :
 // }
@@ -71,4 +71,25 @@ while(j < todos.length) {
   j++;
 }
 
-console.log(longest)
+// console.log(longest)
+//
+//
+
+longest.push("this")
+
+let z = 0;
+do {
+  if(todos[z][todos[z].length = 1] !=='this') {
+    todos[z].push('done');
+  }
+  z++;
+}while(z < todos.length);
+
+let doneItems = [];
+
+todos.forEach(
+  todos => {
+    if(todos[todos.length - 1] === 'done') doneItems.push(todos);
+  });
+
+  alert(todos);
